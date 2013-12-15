@@ -1,3 +1,5 @@
+# Grunt for People Who Think Things Like Grunt are Weird and Hard
+
 Front-end developers are often told to do certain things:
 
 *   **Work in as small chunks of CSS and JavaScript** as makes sense to you,
@@ -72,11 +74,10 @@ Click the big**Install** button [on the Node website][2].
 
 You install Grunt on a per-project basis. Go to your project’s folder. It
 needs a file there named*package.json* at the root level. You can just create
-one and put it there.<figure>
+one and put it there.
 
-![package.json at root][3]<figcaption>*package.json* at root</figcaption></
-figure
->
+![package.json at root][3]
+
 The contents of that file should be this:
 
     {
@@ -94,20 +95,20 @@ Feel free to change the name of the project and the version, but the
 This is how Node does dependencies. Node has a package manager called [NPM][4]
 
 Once that *package.json* file is in place, go to the terminal and navigate to
-your folder. Terminal rubes like me do it like this:<figure>
+your folder. Terminal rubes like me do it like this:
 
-![Terminal rube changing directories][5]<figcaption>Terminal rube changing
-directories</figcaption></figure>
+![Terminal rube changing directories][5]
+
 Then run the command:
 
     npm install
     
 
 After you’ve run that command, a new folder called *node_modules* will show up
-in your project.<figure>
+in your project.
 
-![Example of node_modules folder][6]<figcaption>Example of *node_modules*
-folder</figcaption></figure>
+![Example of node_modules folder][6]
+
 The other files you see there, *README.md* and *LICENSE* are there because I’
 m going to put this project[on GitHub][7] and that’s just standard fare there
 .
@@ -266,10 +267,10 @@ Let’s update that `default` task to also run minification:
 Super-similar to the concatenation set-up, right?
 
 Run `grunt` at the terminal and you’ll get some deliciously minified
-JavaScript:<figure>
+JavaScript:
 
-![Minified JavaScript][12]<figcaption>Minified JavaScript</figcaption></figure
->
+![Minified JavaScript][12]
+
 That *production.min.js* file is what we would load up for use in our *index.
 html* file.
 
@@ -306,9 +307,10 @@ Make sure it runs:
     grunt.registerTask('default', ['concat', 'uglify', 'imagemin']);
     
 
-Run `grunt` and watch that gorgeous squishification happen:<figure>
+Run `grunt` and watch that gorgeous squishification happen:
 
-![Squished images][14]<figcaption>Squished images</figcaption></figure>
+![Squished images][14]
+
 Gotta love performance increases for nearly zero effort.
 
 ## Let’s get a little bit smarter and automate
@@ -361,11 +363,10 @@ learn more.
 **Note:** Isn’t it frustrating when something that looks so easy in a
 tutorial doesn’t seem to work for you? If you can’t get Grunt to run after 
 making a change, it’s very likely to be a syntax error in your*Gruntfile.js*.
-That might look like this in the terminal:<figure>
+That might look like this in the terminal:
 
-![Errors running Grunt][16]<figcaption>Errors running Grunt</figcaption></
-figure
->
+![Errors running Grunt][16]
+
 Usually Grunt is pretty good about letting you know what happened, so be sure
 to read the error message. In this case, a syntax error in the form of a missing
 comma foiled me. Adding the comma allowed it to run.
@@ -433,11 +434,10 @@ watch plug-in. We just need to:
             /* etc */
 
 3.  Restart the browser and click the LiveReload icon to activate it.
-4.  Update some Sass and watch it change the page automatically.<figure>
+4.  Update some Sass and watch it change the page automatically.
 
-![Live reloading browser][21]<figcaption>Live reloading browser</figcaption></
-figure
->
+![Live reloading browser][21]
+
 Yum.
 
 ## Leveling up
